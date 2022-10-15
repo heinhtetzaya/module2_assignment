@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;   
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+h1{
+    font-size: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.col{
+    width: 100%; 
+}
+
+
+.menu{
+    width: 30%;
+    height: auto;   
+    border-style: solid;
+    border-width: 0 0 3px 3px;    
+    border-color: black;
+    float: right;
+    position: relative;    
+    margin-top: 0px;     
+    background-color: rgb(184, 196, 200);   
+}
+
+.description{
+    text-align: left;
+    padding: 20px;
+    margin-top: 25px;
+} 
+
+.chicken{
+    background-color: rgb(211, 240, 194);
+    border: 3px solid black;
+    width: 90%;
+    height: auto;       
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.beef{
+    background-color: rgb(125, 99, 92);
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.beef p {
+    color: white;
+}
+
+.sushi{
+    background-color: rgb(164, 187, 201);
+    border: 3px solid black;
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+    
+} 
+
+/*Computer*/
+
+@media (min-width: 992px) {
+    .col-lg-4{
+        float: left;
+        width: 33%;
+    }    
+}
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6{
+        float: left;
+        width: 50%;        
+    }
+
+    .col-md-12{
+        float: left;
+        width: 100%;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+    .col-lg-12{
+        float: left;
+        width: 100%;       
+    }
+}
